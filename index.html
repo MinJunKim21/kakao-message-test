@@ -12,36 +12,44 @@
 </a>
 <script type="text/javascript">
  Kakao.init('d531cef72c59760709cc96d2a8d1915d');
-  function sendLink() {
-    Kakao.Link.sendDefault({
-      objectType: 'feed',
-      content: {
-        title: '혜진♡동훈 결혼합니다',
-        description: `2023년 12월 2일 토요일 오후 12시 20분
-        상록아트홀`,
-        imageUrl:
-          'http://k.kakaocdn.net/dn/crdnBG/btrJ71N44pq/04PeafsDCuSKDwMK05b92K/kakaolink40_original.jpg',
-        link: {
-          mobileWebUrl: 'https://uyoung-art-project.vercel.app',
-          webUrl: 'https://uyoung-art-project.vercel.app',
-        },
-      },
+  function sendLink(){
+  Kakao.Link.sendCustom({
+  templateId:81745})
+  };
+  
+  
+  
+  
+//   function sendLink() {
+//     Kakao.Link.sendDefault({
+//       objectType: 'feed',
+//       content: {
+//         title: '혜진♡동훈 결혼합니다',
+//         description: `2023년 12월 2일 토요일 오후 12시 20분
+//         상록아트홀`,
+//         imageUrl:
+//           'http://k.kakaocdn.net/dn/crdnBG/btrJ71N44pq/04PeafsDCuSKDwMK05b92K/kakaolink40_original.jpg',
+//         link: {
+//           mobileWebUrl: 'https://uyoung-art-project.vercel.app',
+//           webUrl: 'https://uyoung-art-project.vercel.app',
+//         },
+//       },
 //       social: {
 //         likeCount: 좋아요 수, //99999가 최대입니다
 //         commentCount: 댓글 수, //99999가 최대입니다
 //         sharedCount: 공유 수, //99999가 최대입니다
 //       },
-      buttons: [
-        {
-          title: '청첩장 보러가기',
-          link: {
-            mobileWebUrl: 'https://uyoung-art-project.vercel.app',
-            webUrl: 'https://uyoung-art-project.vercel.app',
-          },
-        },
-      ],
-    })
-  }
+//       buttons: [
+//         {
+//           title: '청첩장 보러가기',
+//           link: {
+//             mobileWebUrl: 'https://uyoung-art-project.vercel.app',
+//             webUrl: 'https://uyoung-art-project.vercel.app',
+//           },
+//         },
+//       ],
+//     })
+//   }
 </script>
 <!-- www.blackcats4567.com -->
 <!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
